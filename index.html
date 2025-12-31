@@ -56,9 +56,6 @@
       rel="stylesheet"
     />
 
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -221,19 +218,15 @@
             >
           </nav>
 
+          <!-- Mobile Menu Button -->
           <button
             @click="mobileMenu = !mobileMenu"
             class="lg:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
           >
             <i
-              class="bi bi-list"
-              x-show="!mobileMenu"
+              class="bi"
+              :class="mobileMenu ? 'bi-x-lg' : 'bi-list'"
               style="font-size: 1.5rem"
-            ></i>
-            <i
-              class="bi bi-x-lg"
-              x-show="mobileMenu"
-              style="font-size: 1.5rem; display: none"
             ></i>
           </button>
         </div>
@@ -307,10 +300,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Text Content -->
-          <div
-            class="text-center lg:text-left order-2 lg:order-1"
-            data-aos="fade-right"
-          >
+          <div class="text-center lg:text-left order-2 lg:order-1">
             <div
               class="inline-block px-4 py-2 bg-white/60 backdrop-blur-md rounded-full border border-primary-100 text-primary-600 font-semibold mb-6 shadow-sm"
             >
@@ -376,10 +366,7 @@
           </div>
 
           <!-- Image/Hero Visual -->
-          <div
-            class="order-1 lg:order-2 flex justify-center"
-            data-aos="fade-left"
-          >
+          <div class="order-1 lg:order-2 flex justify-center">
             <div class="relative w-80 h-80 md:w-96 md:h-96">
               <div
                 class="absolute inset-0 bg-gradient-to-tr from-primary-400 to-purple-400 rounded-[2rem] rotate-6 opacity-20 blur-xl"
@@ -416,7 +403,7 @@
     <section id="about" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div data-aos="fade-right">
+          <div>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Tentang Saya
             </h2>
@@ -450,7 +437,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+          <div class="grid grid-cols-2 gap-4">
             <div class="space-y-4 mt-8">
               <div
                 class="bg-gray-100 rounded-2xl p-6 h-48 w-full flex items-center justify-center"
@@ -483,7 +470,7 @@
     <!-- Resume Section -->
     <section id="resume" class="py-20 bg-gray-50">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
+        <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Pendidikan & Pengalaman
           </h2>
@@ -492,7 +479,7 @@
 
         <div class="grid md:grid-cols-2 gap-12">
           <!-- Education -->
-          <div data-aos="fade-right">
+          <div>
             <h3
               class="flex items-center gap-3 text-2xl font-bold text-gray-800 mb-8"
             >
@@ -545,7 +532,7 @@
           </div>
 
           <!-- Experience -->
-          <div data-aos="fade-left">
+          <div>
             <h3
               class="flex items-center gap-3 text-2xl font-bold text-gray-800 mb-8"
             >
@@ -607,7 +594,7 @@
     <!-- Organization Section -->
     <section id="organization" class="py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
+        <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Pengalaman Organisasi
           </h2>
@@ -618,8 +605,6 @@
           <!-- Org Card 1 -->
           <div
             class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary-200 transition-all duration-300"
-            data-aos="fade-up"
-            data-aos-delay="0"
           >
             <div
               class="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
@@ -641,8 +626,6 @@
           <!-- Org Card 2 -->
           <div
             class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary-200 transition-all duration-300"
-            data-aos="fade-up"
-            data-aos-delay="100"
           >
             <div
               class="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
@@ -666,8 +649,6 @@
           <!-- Org Card 3 -->
           <div
             class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary-200 transition-all duration-300"
-            data-aos="fade-up"
-            data-aos-delay="200"
           >
             <div
               class="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
@@ -787,14 +768,5 @@
         </p>
       </div>
     </footer>
-
-    <!-- AOS Animation Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
-    </script>
   </body>
 </html>
