@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Nadia Putri | Mahasiswa & Profesional Muda</title>
+    <meta name="title" content="Nadia Putri | Mahasiswa & Profesional Muda" />
+    <meta
+      name="description"
+      content="Portofolio dan Resume Nadia Putri - Mahasiswa Berprestasi dengan pengalaman di bidang Organisasi dan Digital Marketing."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Nadia Putri | Mahasiswa & Profesional Muda"
+    />
+    <meta
+      property="og:description"
+      content="Portofolio dan Resume Nadia Putri - Mahasiswa Berprestasi dengan pengalaman di bidang Organisasi dan Digital Marketing."
+    />
+    <meta
+      property="og:image"
+      content="https://placehold.co/1200x630/ffe4e6/e11d48?text=Nadia+Putri"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Nadia Putri | Mahasiswa & Profesional Muda"
+    />
+    <meta
+      property="twitter:description"
+      content="Portofolio dan Resume Nadia Putri - Mahasiswa Berprestasi dengan pengalaman di bidang Organisasi dan Digital Marketing."
+    />
+    <meta
+      property="twitter:image"
+      content="https://placehold.co/1200x630/ffe4e6/e11d48?text=Nadia+Putri"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍🎓</text></svg>"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Plus Jakarta Sans", "sans-serif"] },
+            colors: {
+              primary: {
+                50: "#fff1f2",
+                100: "#ffe4e6",
+                200: "#fecdd3",
+                300: "#fda4af",
+                400: "#fb7185",
+                500: "#f43f5e",
+                600: "#e11d48",
+                700: "#be123c",
+                800: "#9f1239",
+                900: "#881337",
+                950: "#4c0519",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Alpine.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #e11d48, #be123c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+        color: white;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px -10px rgba(225, 29, 72, 0.5);
+      }
+
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      /* Nav link hover underline effect */
+      .nav-link:hover .nav-underline {
+        width: 100%;
+      }
+
+      .nav-link {
+        padding-bottom: 4px;
+      }
+
+      /* Header scroll effect */
+      .header-scrolled {
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: blur(12px) !important;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body class="font-sans antialiased bg-white" x-data="{ mobileMenu: false }">
+    <!-- Scroll effect script -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 0) {
+          navbar.classList.add("header-scrolled");
+        } else {
+          navbar.classList.remove("header-scrolled");
+        }
+      });
+    </script>
+    <!-- Navbar -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Brand Logo with Text -->
+          <a href="/" class="flex items-center gap-2 group">
+            <div
+              class="w-10 h-10 rounded-full bg-gradient-to-tr from-primary-400 to-primary-600 flex items-center justify-center text-white font-bold text-lg shadow-lg"
+            >
+              N
+            </div>
+            <span class="text-xl font-bold text-gray-800 tracking-tight"
+              >Nadia <span class="text-primary-600">Putri.</span></span
+            >
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden lg:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="nav-link relative text-gray-600 font-medium transition-all duration-300 hover:text-primary-600"
+            >
+              Beranda
+              <span
+                class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="#about"
+              class="nav-link relative text-gray-600 font-medium transition-all duration-300 hover:text-primary-600"
+            >
+              Tentang
+              <span
+                class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="#resume"
+              class="nav-link relative text-gray-600 font-medium transition-all duration-300 hover:text-primary-600"
+            >
+              Resume
+              <span
+                class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="#organization"
+              class="nav-link relative text-gray-600 font-medium transition-all duration-300 hover:text-primary-600"
+            >
+              Organisasi
+              <span
+                class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="#contact"
+              class="btn-primary px-5 py-2.5 rounded-full font-semibold shadow-md transform hover:scale-105"
+              >Hubungi Saya</a
+            >
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button
+            @click="mobileMenu = !mobileMenu"
+            class="lg:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+          >
+            <i
+              class="bi"
+              :class="mobileMenu ? 'bi-x-lg' : 'bi-list'"
+              style="font-size: 1.5rem"
+            ></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        x-show="mobileMenu"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 -translate-y-2"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-2"
+        class="lg:hidden bg-white/95 backdrop-blur-md border-t shadow-lg absolute w-full"
+        @click.away="mobileMenu = false"
+      >
+        <div class="px-4 py-4 space-y-2">
+          <a
+            href="#home"
+            @click="mobileMenu = false"
+            class="block py-3 px-4 text-gray-600 font-medium rounded-lg hover:bg-primary-50 hover:text-primary-600 transition-all duration-200"
+            >Beranda</a
+          >
+          <a
+            href="#about"
+            @click="mobileMenu = false"
+            class="block py-3 px-4 text-gray-600 font-medium rounded-lg hover:bg-primary-50 hover:text-primary-600 transition-all duration-200"
+            >Tentang</a
+          >
+          <a
+            href="#resume"
+            @click="mobileMenu = false"
+            class="block py-3 px-4 text-gray-600 font-medium rounded-lg hover:bg-primary-50 hover:text-primary-600 transition-all duration-200"
+            >Resume</a
+          >
+          <a
+            href="#organization"
+            @click="mobileMenu = false"
+            class="block py-3 px-4 text-gray-600 font-medium rounded-lg hover:bg-primary-50 hover:text-primary-600 transition-all duration-200"
+            >Organisasi</a
+          >
+          <a
+            href="#contact"
+            @click="mobileMenu = false"
+            class="block w-full text-center mt-4 btn-primary px-4 py-3 rounded-xl font-semibold shadow-lg"
+            >Hubungi Saya</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Home/Banner Section -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-pink-50"
+    >
+      <!-- Floating Blobs -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          class="absolute -top-40 -right-40 w-96 h-96 bg-primary-200 rounded-full blur-3xl opacity-50"
+        ></div>
+        <div
+          class="absolute top-1/2 -left-20 w-72 h-72 bg-purple-200 rounded-full blur-3xl opacity-50"
+        ></div>
+        <div
+          class="absolute bottom-0 right-20 w-80 h-80 bg-pink-200 rounded-full blur-3xl opacity-50"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Text Content -->
+          <div
+            class="text-center lg:text-left order-2 lg:order-1"
+            data-aos="fade-right"
+          >
+            <div
+              class="inline-block px-4 py-2 bg-white/60 backdrop-blur-md rounded-full border border-primary-100 text-primary-600 font-semibold mb-6 shadow-sm"
+            >
+              👋 Halo, Saya Nadia Putri
+            </div>
+            <h1
+              class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6"
+            >
+              Mahasiswa <br />
+              <span class="text-primary-600">Sistem Informasi</span>
+            </h1>
+            <p
+              class="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed"
+            >
+              Saya adalah mahasiswa berdedikasi dengan minat mendalam pada
+              <span class="font-semibold text-gray-800">UI/UX Design</span> dan
+              <span class="font-semibold text-gray-800"
+                >Front-end Development</span
+              >. Selalu bersemangat untuk belajar hal baru dan menciptakan
+              solusi digital yang berdampak.
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="#resume"
+                class="btn-primary px-8 py-4 rounded-full font-bold shadow-lg shadow-primary-500/30 flex items-center justify-center gap-2"
+              >
+                <i class="bi bi-file-earmark-person"></i> Lihat Resume
+              </a>
+              <a
+                href="#contact"
+                class="px-8 py-4 rounded-full bg-white text-gray-700 font-bold border border-gray-200 hover:border-primary-300 hover:text-primary-600 transition-all shadow-sm flex items-center justify-center gap-2"
+              >
+                <i class="bi bi-envelope"></i> Hubungi Saya
+              </a>
+            </div>
+
+            <div
+              class="mt-12 flex items-center justify-center lg:justify-start gap-6"
+            >
+              <!-- Social Links -->
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-primary-50 hover:text-primary-600 hover:border-primary-200 transition-all"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-primary-50 hover:text-primary-600 hover:border-primary-200 transition-all"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-primary-50 hover:text-primary-600 hover:border-primary-200 transition-all"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image/Hero Visual -->
+          <div
+            class="order-1 lg:order-2 flex justify-center"
+            data-aos="fade-left"
+          >
+            <div class="relative w-80 h-80 md:w-96 md:h-96">
+              <div
+                class="absolute inset-0 bg-gradient-to-tr from-primary-400 to-purple-400 rounded-[2rem] rotate-6 opacity-20 blur-xl"
+              ></div>
+              <img
+                src="https://placehold.co/600x600/ffe4e6/e11d48?text=NP"
+                alt="Nadia Putri"
+                class="relative w-full h-full object-cover rounded-[2rem] shadow-2xl border-4 border-white transform hover:-translate-y-2 transition-transform duration-500"
+              />
+              <!-- Floating Card -->
+              <div
+                class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-gray-100 flex items-center gap-3 animate-bounce"
+                style="animation-duration: 3s"
+              >
+                <div
+                  class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600"
+                >
+                  <i class="bi bi-check-lg text-xl"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-gray-500">Status</div>
+                  <div class="text-sm font-bold text-gray-800">
+                    Open to Work
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Tentang Saya
+            </h2>
+            <div class="w-20 h-1.5 bg-primary-500 rounded-full mb-8"></div>
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+              Halo! Saya adalah seorang mahasiswa tingkat akhir jurusan Sistem
+              Informasi yang memiliki ketertarikan besar dalam dunia teknologi
+              dan bisnis digital.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+              Selama masa kuliah, saya aktif terlibat dalam berbagai organisasi
+              kemahasiswaan dan proyek-proyek pengembangan website. Saya percaya
+              bahwa kombinasi antara desain yang baik dan fungsionalitas yang
+              handal adalah kunci dari produk digital yang sukses.
+            </p>
+
+            <div class="grid grid-cols-2 gap-6 mt-8">
+              <div
+                class="p-4 bg-primary-50 rounded-xl border border-primary-100"
+              >
+                <h3 class="text-3xl font-bold text-primary-600 mb-1">3+</h3>
+                <p class="text-gray-600 text-sm">Tahun Pengalaman</p>
+              </div>
+              <div
+                class="p-4 bg-primary-50 rounded-xl border border-primary-100"
+              >
+                <h3 class="text-3xl font-bold text-primary-600 mb-1">15+</h3>
+                <p class="text-gray-600 text-sm">Proyek Selesai</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+            <div class="space-y-4 mt-8">
+              <div
+                class="bg-gray-100 rounded-2xl p-6 h-48 w-full flex items-center justify-center"
+              >
+                <i class="bi bi-code-slash text-5xl text-gray-300"></i>
+              </div>
+              <div
+                class="bg-primary-100 rounded-2xl p-6 h-64 w-full flex items-center justify-center"
+              >
+                <i class="bi bi-palette text-5xl text-primary-300"></i>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="bg-primary-600 rounded-2xl p-6 h-64 w-full flex items-center justify-center shadow-xl"
+              >
+                <i class="bi bi-lightbulb text-5xl text-white/50"></i>
+              </div>
+              <div
+                class="bg-gray-100 rounded-2xl p-6 h-48 w-full flex items-center justify-center"
+              >
+                <i class="bi bi-laptop text-5xl text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Pendidikan & Pengalaman
+          </h2>
+          <div class="w-16 h-1.5 bg-primary-500 rounded-full mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Education -->
+          <div data-aos="fade-right">
+            <h3
+              class="flex items-center gap-3 text-2xl font-bold text-gray-800 mb-8"
+            >
+              <i class="bi bi-mortarboard-fill text-primary-600"></i> Pendidikan
+            </h3>
+
+            <div class="border-l-2 border-primary-200 ml-3 space-y-12">
+              <!-- Item -->
+              <div class="relative pl-8">
+                <span
+                  class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary-500 ring-4 ring-primary-100"
+                ></span>
+                <div
+                  class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all"
+                >
+                  <span
+                    class="text-sm font-semibold text-primary-600 bg-primary-50 px-3 py-1 rounded-full"
+                    >2021 - Sekarang</span
+                  >
+                  <h4 class="text-lg font-bold text-gray-900 mt-2">
+                    S1 Sistem Informasi
+                  </h4>
+                  <p class="text-gray-500">Universitas Teknologi Digital</p>
+                  <p class="text-gray-600 mt-3 text-sm">
+                    IPK: 3.85 / 4.00. Aktif dalam himpunan mahasiswa dan asisten
+                    laboratorium.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="relative pl-8">
+                <span
+                  class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gray-300 ring-4 ring-gray-100"
+                ></span>
+                <div
+                  class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all"
+                >
+                  <span
+                    class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                    >2018 - 2021</span
+                  >
+                  <h4 class="text-lg font-bold text-gray-900 mt-2">
+                    SMA Negeri 1 Kota
+                  </h4>
+                  <p class="text-gray-500">Jurusan IPA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div data-aos="fade-left">
+            <h3
+              class="flex items-center gap-3 text-2xl font-bold text-gray-800 mb-8"
+            >
+              <i class="bi bi-briefcase-fill text-primary-600"></i> Pengalaman
+            </h3>
+
+            <div class="border-l-2 border-primary-200 ml-3 space-y-12">
+              <!-- Item -->
+              <div class="relative pl-8">
+                <span
+                  class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary-500 ring-4 ring-primary-100"
+                ></span>
+                <div
+                  class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all"
+                >
+                  <span
+                    class="text-sm font-semibold text-primary-600 bg-primary-50 px-3 py-1 rounded-full"
+                    >Jan 2024 - Sekarang</span
+                  >
+                  <h4 class="text-lg font-bold text-gray-900 mt-2">
+                    UI/UX Designer Intern
+                  </h4>
+                  <p class="text-gray-500">StartUp Inovatif Indonesia</p>
+                  <p class="text-gray-600 mt-3 text-sm">
+                    Merancang antarmuka aplikasi mobile dan website, membuat
+                    wireframe, dan melakukan user research.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="relative pl-8">
+                <span
+                  class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gray-300 ring-4 ring-gray-100"
+                ></span>
+                <div
+                  class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all"
+                >
+                  <span
+                    class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                    >2023 - 2024</span
+                  >
+                  <h4 class="text-lg font-bold text-gray-900 mt-2">
+                    Freelance Web Developer
+                  </h4>
+                  <p class="text-gray-500">Self-Employed</p>
+                  <p class="text-gray-600 mt-3 text-sm">
+                    Mengerjakan project pembuatan landing page untuk UMKM
+                    menggunakan WordPress dan Tailwind CSS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organization Section -->
+    <section id="organization" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Pengalaman Organisasi
+          </h2>
+          <div class="w-16 h-1.5 bg-primary-500 rounded-full mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Org Card 1 -->
+          <div
+            class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary-200 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div
+              class="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i class="bi bi-people-fill text-3xl text-primary-600"></i>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-2">
+              Himpunan Mahasiswa
+            </h4>
+            <div class="text-primary-600 font-medium text-sm mb-4">
+              Kepala Divisi Kominfo
+            </div>
+            <p class="text-gray-600 text-sm">
+              Bertanggung jawab atas pengelolaan media sosial dan publikasi
+              kegiatan himpunan.
+            </p>
+          </div>
+
+          <!-- Org Card 2 -->
+          <div
+            class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary-200 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i
+                class="bi bi-calendar-event-fill text-3xl text-primary-600"
+              ></i>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-2">
+              Panitia Seminar Nasional
+            </h4>
+            <div class="text-primary-600 font-medium text-sm mb-4">
+              Sekretaris Pelaksana
+            </div>
+            <p class="text-gray-600 text-sm">
+              Mengelola administrasi, surat menyurat, dan notulensi rapat selama
+              persiapan acara.
+            </p>
+          </div>
+
+          <!-- Org Card 3 -->
+          <div
+            class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary-200 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i class="bi bi-globe text-3xl text-primary-600"></i>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-2">English Club</h4>
+            <div class="text-primary-600 font-medium text-sm mb-4">
+              Member Aktif
+            </div>
+            <p class="text-gray-600 text-sm">
+              Aktif mengikuti sesi diskusi mingguan dan kompetisi pidato bahasa
+              Inggris.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+          <div class="grid md:grid-cols-2">
+            <div
+              class="p-10 md:p-12 bg-primary-600 text-white relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 -ml-10 -mb-10 w-40 h-40 bg-black/10 rounded-full blur-2xl"
+              ></div>
+
+              <h3 class="text-3xl font-bold mb-6">Hubungi Saya</h3>
+              <p class="text-primary-100 mb-12">
+                Tertarik untuk bekerja sama atau sekadar menyapa? Jangan ragu
+                untuk mengirim pesan!
+              </p>
+
+              <div class="space-y-6">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center"
+                  >
+                    <i class="bi bi-envelope text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs text-primary-200">Email</p>
+                    <p class="font-medium">nadia.putri@example.com</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center"
+                  >
+                    <i class="bi bi-geo-alt text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs text-primary-200">Lokasi</p>
+                    <p class="font-medium">Jakarta, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-10 md:p-12">
+              <form class="space-y-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
+                    placeholder="Nama Anda"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
+                    placeholder="email@anda.com"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Pesan</label
+                  >
+                  <textarea
+                    rows="4"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
+                    placeholder="Tulis pesan Anda disini..."
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  class="w-full btn-primary py-3 rounded-xl font-bold shadow-lg shadow-primary-500/20"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-10">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-gray-500">
+          © 2025 Nadia Putri. Dibuat dengan sepenuh ❤️.
+        </p>
+      </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
