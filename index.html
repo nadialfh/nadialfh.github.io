@@ -221,15 +221,19 @@
             >
           </nav>
 
-          <!-- Mobile Menu Button -->
           <button
             @click="mobileMenu = !mobileMenu"
             class="lg:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
           >
             <i
-              class="bi"
-              :class="mobileMenu ? 'bi-x-lg' : 'bi-list'"
+              class="bi bi-list"
+              x-show="!mobileMenu"
               style="font-size: 1.5rem"
+            ></i>
+            <i
+              class="bi bi-x-lg"
+              x-show="mobileMenu"
+              style="font-size: 1.5rem; display: none"
             ></i>
           </button>
         </div>
